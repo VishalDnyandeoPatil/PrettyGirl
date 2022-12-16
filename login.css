@@ -136,14 +136,17 @@ footer>div{
     margin: 5px;
     text-align: center;
     padding: 2%;
-
 }
 #container button:hover{
     background-color: #83080881;
     padding: 3%;
+    
 }
 #container input{
     margin: 5px;
     text-align: center;
     height: 25px;
+}
+#signUp{
+    display: none;
 }
