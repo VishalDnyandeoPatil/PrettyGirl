@@ -120,52 +120,57 @@ footer>div{
 }
 
 #container{
-    width: 20%;
-    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* justify-content: center; */
-    text-align: center;
+    /* border: 1px solid black; */
+    width: 90%;
     margin: auto;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    background-color: #fee8e8;
+    margin-top: 5%;  
+    margin-bottom: 5%;  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    column-gap:2% ;
+    row-gap:20px ;
+    grid-template-areas:
+    "child1 child2"
+    "child3 child3";
 }
 
-#signUp{
-    display: none;
+#container img{
+    width: 50%;
 }
-input{
+#container>div:nth-child(1){
+    /* border: 1px solid green; */
     text-align: center;
-    margin: 10px;
-    height: 25px;
+    grid-area: child1;
+}
+#container>div:nth-child(2){
+    /* border: 1px solid blue; */
+    text-align: center;
+    grid-area: child2;
+}
+#container>div:nth-child(3){
+    /* border: 1px solid brown; */
+    text-align: center;
+    grid-area: child3;
     
 }
-.submitBtn{
-    text-align: center;
-    padding: 5px;
-    padding-bottom: 20px;
-    border-radius: 5px;
-    border: 1.5px solid rgb(226, 47, 77);
-    color: rgb(124, 54, 66);
-    background-color: pink ;
-}
-.submitBtn:hover{
-    padding: 8px;
-    padding-bottom: 22px;
-    color: rgb(85, 11, 24);
+#container>div>div>h2, #container>div>div>h5, #container>div>div>h3, #container>div>div>button,  #container>div>div>h4{
+    /* border: 1px solid blue; */
+    /* color: blue; */
+    margin: 2%;
 }
 
-#signUpPage{
-    text-align: center;
-    padding: 1.8%;
+#container>div>div>button{
+    padding: 2%;
     border-radius: 5px;
-    background-color: pink ;
-    border: 1.5px solid rgb(226, 47, 77);
-    color: rgb(124, 54, 66);
+    border: 0px;
+    background-color: black;
+    color: white;
 }
-#signUpPage:hover{
-    padding: 8px;
-    
-    color: rgb(85, 11, 24);
+#container>div>div>button:hover{
+    padding: 3%;
+    border-radius: 5px;
+    border: 0px;
+    background-color: black;
+    color: red;
 }

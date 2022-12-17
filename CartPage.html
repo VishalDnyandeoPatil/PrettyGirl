@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Sign Up</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="CartPage.css">
 </head>
 <body>
     <header>
@@ -32,19 +32,21 @@
                 </a>
             </div>
             <div class="search">
-                <button>
+                <!-- <button>
                     <h4>
                         Search
                     </h4>
                 </button>
-                <input type="text" placeholder="Find Lipstick, Eyeliner, Makeup Tutorial, etc">
+                <input type="text" placeholder="Find Lipstick, Eyeliner, Makeup Tutorial, etc"> -->
             </div>
             <div class="cart-login">
                 <a href="CartPage.html">
                     <img  src="https://www.shareicon.net/data/128x128/2016/07/09/119077_basket_512x512.png" alt="bag">
                 </a>
-                
-                <img src="https://www.shareicon.net/data/128x128/2016/07/09/119082_man_512x512.png" alt="login">
+                <a href="login.html">
+
+                    <img src="https://www.shareicon.net/data/128x128/2016/07/09/119082_man_512x512.png" alt="login">
+                </a>
             </div>       
         </div>
         <div id="navbottom">
@@ -113,30 +115,7 @@
             </div>
         </div>  
     </header>
-    <div id="container">
-        <form id="signUp">
-            <h1>Sign Up!</h1>
-            <input type="text" id="name" placeholder="Name" required>
-            <br>
-            <input type="email" id="email" placeholder="E-mail" required>
-            <br>
-            <input type="password" id="password" placeholder="Password" required>
-            <br>
-            <input type="password" id="passwordChk" placeholder="Re-enter password" required>
-            <br>
-            <input type="submit" class="submitBtn" >
-        </form>
-        <form id="signIn">
-            <h1>Sign In!</h1>
-            <input type="email" id="email1" placeholder="E-mail" required>
-            <br>
-            <input type="password" id="password1" placeholder="Password" required>
-            <br>
-            <input type="submit" class="submitBtn">
-            <button id="signUpPage">
-                Sign Up
-            </button>
-        </form>
+    <div id="page-content">
     </div>
     <footer>
         <div id="footerContainer">
@@ -672,4 +651,4 @@
     </footer>
 </body>
 </html>
-<script src="login.js"></script>
+<script src="CartPage.js"></script>
